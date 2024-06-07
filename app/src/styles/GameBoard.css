@@ -1,0 +1,239 @@
+.GameBoard {
+    width: 87%;
+    max-width: 28.75rem;
+}
+
+.header, .target-boxes, .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.header {
+    margin-bottom: 1.25rem;
+}
+
+.header .logo {
+    align-self: center;
+}
+
+.whose-turn {
+    background-color: var(--semi-dark-navy);
+    box-shadow: 0 -4px 0 var(--dark-navy-shadow) inset;
+    border-radius: 10px;
+    color: var(--silver);
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whose-turn img {
+    margin-right: 13px;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.restart-btn-container {
+    justify-self: end;
+}
+
+.restart-btn {
+    width: 3.25rem;
+    height: 3.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--silver);
+    box-shadow: 0 -4px 0 var(--silver-shadow) inset;
+}
+
+.restart-btn:hover {
+    background-color: var(--silver-hover);
+    cursor: pointer;
+}
+
+.restart-btn img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+@media (max-width: 420px) {
+    .header {
+        margin-bottom: 64px;
+    }
+    .whose-turn img {
+        width: 1rem;
+        height: 1rem;
+    }
+    .restart-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .restart-btn img {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.target-box {
+    width: 100%;
+    padding-top: 100%;  /* Width and height ratio will always be 1:1 */
+    position: relative;
+    border-radius: 15px;
+}
+
+.target-box .mark {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mark {
+    width: 4rem;
+    height: 4rem;
+}
+
+@media (max-width: 420px) {
+    .mark {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.footer {
+    margin-top: 1.25rem;
+}
+
+.count-container {
+    border-radius: 15px;
+    text-align: center;
+    padding: 0.75rem;
+    color: var(--dark-navy);
+}
+
+.x-count-container {
+    background-color: var(--light-blue);
+}
+
+.draw-count-container {
+    background-color: var(--silver);
+}
+
+.o-count-container {
+    background-color: var(--yellow);
+}
+
+.count-box-header {
+    font-size: 0.875rem;
+}
+
+.count-box-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 420px) {
+    .count-box-header {
+        font-size: 0.75rem;
+    }   
+    .count-box-number {
+        font-size: 1.25rem;
+    }
+}
+
+dialog {
+    border: none;
+    width: 100%;
+    height: 16.625rem;
+    background-color: var(--semi-dark-navy);
+    position: relative;
+    padding: 0;
+    border-left: 20px solid var(--semi-dark-navy);
+    border-right: 20px solid var(--semi-dark-navy);
+}
+
+dialog p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--silver);
+    margin-bottom: 1rem;
+}
+
+dialog .container {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.main-text img {
+    margin-right: 24px;
+}
+
+dialog button {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    text-transform: uppercase;
+    color: var(--dark-navy);
+}
+
+.btns-container {
+    text-align: center;
+}
+
+.silver-btn {
+    background-color: var(--silver);
+    box-shadow: 0 -4px 0 var(--silver-shadow) inset;
+    margin-right: 1rem;
+}
+
+.silver-btn:hover {
+    background-color: var(--silver-hover);
+    cursor: pointer;
+}
+
+.yellow-btn {
+    background-color: var(--yellow);
+    box-shadow: 0 -4px 0 var(--yellow-shadow) inset;
+}
+
+.yellow-btn:hover {
+    background-color: var(--yellow-hover);
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    dialog p {
+        font-size: 0.875rem;
+    }
+    .main-text {
+        font-size: 1.5rem;
+    }
+    .main-text img {
+        margin-right: 9px;
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..900&display=swap');
+
+:root {
+  --dark-navy: hsl(202, 32%, 15%);
+  --semi-dark-navy: hsl(199, 35%, 19%);
+  --light-blue: hsl(179, 60%, 48%);
+  --light-blue-hover: hsl(178, 75%, 65%);
+  --yellow: hsl(39, 88%, 58%);
+  --yellow-hover: hsl(39, 100%, 69%);
+  --silver: hsl(198, 23%, 72%);
+  --silver-hover: hsl(197, 33%, 89%);
+  --silver-shadow: hsl(198, 5%, 58%);
+  --dark-navy-shadow: hsl(201, 34%, 11%);
+  --yellow-shadow: hsl(39, 45%, 49%);
+  --light-blue-shadow: hsl(179, 51%, 43%);
+}
+
+*:not(svg, dialog) {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--dark-navy);
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

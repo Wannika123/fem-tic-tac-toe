@@ -1,0 +1,92 @@
+.GameStarter {
+    width: 87%;
+    max-width: 28.75rem;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.player1-choices-section {
+    background-color: var(--semi-dark-navy);
+    border-radius: 15px;
+    text-align: center;
+    padding: 1.5rem 24px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 6px var(--dark-navy-shadow);
+}
+
+.player1-choices-section h1 {
+    color: var(--silver);
+    font-size: 1rem;
+}
+
+.player1-choices {
+    padding: 8px;
+    background-color: var(--dark-navy);
+    border-radius: 10px;
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+label {
+    width: 50%;
+    height: 3.375rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label:hover {
+    background-color: var(--semi-dark-navy);
+    cursor: pointer;
+}
+
+input[type='radio']:checked + label {
+    background-color: var(--silver) !important;
+}
+
+.player1-choices-section p {
+    color: var(--silver);
+    font-size: 0.875rem;
+}
+
+.GameStarter button {
+    width: 100%;
+    border: none;
+    height: 3.75rem;
+    margin-bottom: 1.25rem !important;
+    color: var(--dark-navy);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.vs-cpu-btn {
+    background-color: var(--yellow);
+    box-shadow: 0 6px var(--yellow-shadow);
+}
+
+.vs-cpu-btn:hover {
+    background-color: var(--yellow-hover);
+}
+
+.vs-player-btn {
+    background-color: var(--light-blue);
+    box-shadow: 0 6px var(--light-blue-shadow);
+}
+
+.vs-player-btn:hover {
+    background-color: var(--light-blue-hover);
+}
